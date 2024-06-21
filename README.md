@@ -3,7 +3,7 @@
 ### please add the following code
 ```
 module app {
-    source = "./module"
+    source = "alex-dev0ps/release/helm"
     namespace = "default"
     name = "wordpress"
     wait = false
