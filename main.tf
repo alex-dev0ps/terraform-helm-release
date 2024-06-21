@@ -1,7 +1,3 @@
-# terraform-helm-release
-
-### please add the following code
-```
 module app {
     source = "./module"
     namespace = "default"
@@ -18,4 +14,3 @@ image:
   EOF
   ]
 }
-```
