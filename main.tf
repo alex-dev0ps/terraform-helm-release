@@ -1,4 +1,4 @@
-module app {
+module wordpress {
     source = "alex-dev0ps/release/helm"
     namespace = "default"
     name = "wordpress"
