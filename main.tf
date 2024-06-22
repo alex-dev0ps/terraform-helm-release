@@ -1,16 +1,7 @@
-module wordpress {
-    source = "alex-dev0ps/release/helm"
-    namespace = "default"
-    name = "wordpress"
-    wait = false
-    chart = "./applcation"
-    values = [<<EOF
-replicaCount: 3
-image:
-  repository: wordpress
-  pullPolicy: IfNotPresent
-  # Overrides the image tag whose default is the chart appVersion.
-  tag: "latest"
-  EOF
-  ]
+resource "helm_release" "thisapp" {
+  namespace = var.namespace
+  name      = var.name
+  chart     = var.chart
+  wait      = var.wait
+  values    = var.values
 }
