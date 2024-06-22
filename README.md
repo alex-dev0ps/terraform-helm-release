@@ -19,3 +19,26 @@ image:
   ]
 }
 ```
+
+<!-- provider "helm" {
+  kubernetes {
+    config_path = "~/.kube/config"
+  }
+} -->
+
+
+
+<!-- 
+[<<EOF
+
+replicaCount: 3
+
+image:
+  repository: wordpress
+  pullPolicy: IfNotPresent
+  # Overrides the image tag whose default is the chart appVersion.
+  tag: "latest"
+
+  EOF
+  ] -->
+
